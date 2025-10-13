@@ -296,3 +296,201 @@
   }
 }
 
+/* ========== SEÇÃO DE VÍDEO ========== */
+.video-section {
+  background: #FAFAFA;
+  padding: var(--section-padding) 0;
+}
+
+.video-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+  background: #000;
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16/9;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .video-wrapper {
+    border-radius: 16px;
+  }
+}
+/* ========== SEÇÃO BTG PACTUAL - ELA EMPREENDE ========== */
+
+/* Background lilás suave com textura */
+.btg-blend {
+  background: radial-gradient(80% 100% at 50% 0%, rgba(232,182,216,.18) 0%, transparent 60%),
+              linear-gradient(180deg, rgba(247,230,241,.6), rgba(247,230,241,.6));
+  position: relative;
+}
+
+/* Header e grid */
+.sec-ela { 
+  padding: var(--section-padding) 0; 
+}
+
+.sec-ela__header { 
+  text-align: center; 
+  margin-bottom: 2.5rem; 
+}
+
+.sec-ela__title { 
+  font-family: var(--font-heading); 
+  font-size: 2rem; 
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.sec-ela__title span { 
+  background: linear-gradient(120deg, #E8B6D8, #F2C6E8); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sec-ela__subtitle { 
+  max-width: 820px; 
+  margin: 0.75rem auto 0; 
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Logos BTG + Artes da Si */
+.ela-logos { 
+  display: flex; 
+  gap: 20px; 
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 1.5rem; 
+}
+
+.ela-logo { 
+  height: 50px; 
+  width: auto; 
+  object-fit: contain; 
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,.12)); 
+}
+
+/* Grid de cards */
+.ela-grid { 
+  display: grid; 
+  grid-template-columns: repeat(2, minmax(0,1fr)); 
+  gap: 1.5rem; 
+  margin-top: 2rem; 
+}
+
+.ela-card { 
+  background: rgba(255,255,255,.65); 
+  border: 1px solid rgba(232,182,216,.35); 
+  border-radius: 16px; 
+  padding: 2rem; 
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.ela-card__title { 
+  font-family: var(--font-heading); 
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--accent-navy);
+}
+
+/* Lista de mudanças */
+.ela-list { 
+  padding-left: 1.25rem; 
+  line-height: 1.8; 
+  color: #333; 
+}
+
+.ela-list li { 
+  list-style: disc; 
+  margin: 0.75rem 0; 
+}
+
+.ela-list strong {
+  color: var(--accent-navy);
+}
+
+/* Chips de qualidades */
+.ela-chips { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 0.75rem; 
+  margin: 0.5rem 0 1.25rem;
+  list-style: none;
+  padding: 0;
+}
+
+.ela-chips .chip { 
+  padding: 0.65rem 1rem; 
+  border-radius: 999px; 
+  background: var(--panel); 
+  border: 1px solid rgba(232,182,216,.45); 
+  font-size: 0.95rem; 
+  color: #333;
+  font-weight: 500;
+}
+
+.ela-note { 
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* CTA */
+.ela-cta { 
+  display: flex; 
+  justify-content: center; 
+  margin-top: 2.5rem; 
+}
+
+.btn--large {
+  padding: 1.25rem 3rem;
+  font-size: 1.15rem;
+}
+
+/* Responsivo */
+@media (max-width: 900px) { 
+  .ela-grid { 
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (max-width: 768px) {
+  .sec-ela__title {
+    font-size: 1.65rem;
+  }
+  
+  .ela-card {
+    padding: 1.5rem;
+  }
+  
+  .ela-logo {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ela-logo { 
+    height: 35px; 
+  }
+  
+  .sec-ela__title {
+    font-size: 1.5rem;
+  }
+}
+  
+
