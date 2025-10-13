@@ -532,22 +532,3 @@
     font-size: 0.95rem;
   }
 }
-/* Mobile muito pequeno */
-@media (max-width: 480px) {
-  .hero__title {
-    font-size: 1.75rem;
-  }
-  
-  .hero__subtitle {
-    font-size: 1rem;
-  }
-  
-  /* Overlay ainda mais forte */
-  .hero__overlay {
-    background: linear-gradient(
-      180deg, 
-      rgba(25, 0, 25, 0.6) 0%, 
-      rgba(25, 0, 25, 0.4) 100%
-    );
-  }
-}
