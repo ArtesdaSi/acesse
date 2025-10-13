@@ -17,8 +17,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 0.25rem 1.5rem;  /* Margem mínima */
 }
+
+
 
 .header__logo {
   height: 150px;  /* Triplicado: 50px × 3 = 150px */
