@@ -26,7 +26,7 @@
     
     // Acessórios
     { id: 10, title: 'Estojo Personalizado', category: 'acessorio', img: 'assets/img/img10.jpg', note: 'Para maquiagem, lápis ou acessórios. Bordado opcional.' },
-    { id: 11, title: 'Chaveiro Bordado', category: 'acessorio', img: 'assets/img/img11.jpg', note: 'Mini brinde personalizado. Ideal para eventos.' },
+    { id: 11, title: 'Bolsa de Praia', category: 'acessorio', img: 'assets/img/img11.jpg', note: 'Elegância "on the beach". Leve caráter para seu passseio. Alta qualidade' },
     { id: 12, title: 'Peça com Nome Bordado', category: 'personalizado', img: 'assets/img/img12.jpg', note: 'Qualquer produto com personalização completa.' }
   ];
   
