@@ -22,7 +22,7 @@
     { id: 8, title: 'Kit Corporativo Boas-Vindas', category: 'kit', img: 'assets/img/img8.jpg', note: 'Conjunto para novos colaboradores. Logo da empresa.' },
     
     // Couro
-    { id: 9, title: 'Bolsa em Couro Ecológico', category: 'couro', img: 'assets/img/img9.jpg', note: 'Material sintético de alta qualidade. Durável e elegante.' },
+    { id: 9, title: 'Estojos Personalizados', category: 'personalizado', img: 'assets/img/img9.jpg', note: 'Material de alta qualidade. Durável e elegante.' },
     
     // Acessórios
     { id: 10, title: 'Estojo Personalizado', category: 'acessorio', img: 'assets/img/img10.jpg', note: 'Para maquiagem, lápis ou acessórios. Bordado opcional.' },
