@@ -620,3 +620,67 @@
     font-size: 1rem;
   }
 }
+/* ===== NAV FIX: alinhamento perfeito (desktop e mobile) ===== */
+
+/* header todo centralizado verticalmente */
+.header .header__container {
+  display: flex;
+  align-items: center;            /* centra logo + nav */
+  justify-content: space-between;
+  min-height: 72px;               /* altura do header */
+}
+
+/* nav como linha e itens centralizados */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;            /* alinha links e o botão na mesma linha base */
+  gap: 2rem;
+  margin: 0;
+}
+
+/* links do menu com mesma altura e centrados */
+.nav__link {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;                   /* mesma altura do botão */
+  line-height: 1;
+  padding: 0 .25rem;
+}
+
+/* botão do e-book com altura idêntica aos links */
+.nav__item--ebook .btn--ebook {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;                   /* match */
+  padding: 0 16px;                /* só nas laterais */
+  line-height: 1;
+  margin-left: .5rem;
+}
+
+/* evita que sombras e blur “puxem” o botão pra baixo visualmente */
+.nav__item--ebook .btn--ebook::after {
+  inset: -2px;                    /* glow mais contido */
+  filter: blur(6px);
+}
+
+/* responsivo: mantém alinhado no menu mobile */
+@media (max-width: 767px) {
+  .nav__list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .nav__item--ebook,
+  .nav__item--ebook .btn--ebook {
+    width: 100%;
+  }
+  .nav__item--ebook .btn--ebook {
+    justify-content: center;
+    height: 48px;
+    font-size: 1rem;
+  }
+}
