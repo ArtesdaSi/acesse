@@ -532,3 +532,91 @@
     font-size: 0.95rem;
   }
 }
+/* ===== NAV: E-book Hotmart callout ===== */
+.nav__item--ebook { /* garante bom espaçamento no desktop */
+  margin-left: .5rem;
+}
+
+.btn--ebook {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .625rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .95rem;
+  letter-spacing: .2px;
+  color: #fff;
+  background: linear-gradient(135deg, #FF7A18 0%, #FF3D00 60%, #FF8A00 100%);
+  box-shadow:
+    0 6px 20px rgba(255, 61, 0, .35),
+    inset 0 0 0 1px rgba(255,255,255,.15);
+  border: 0;
+  position: relative;
+  isolation: isolate;
+  transform: translateZ(0);
+  animation: ebookPulse 2.2s ease-in-out infinite;
+}
+
+/* glow externo sutil */
+.btn--ebook::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  background: radial-gradient(60% 60% at 50% 50%, rgba(255,125,0,.25), transparent 70%);
+  filter: blur(8px);
+  z-index: -1;
+  opacity: .7;
+}
+
+/* foguinho com flicker leve */
+.ebook__flame {
+  display: inline-block;
+  line-height: 1;
+  filter: drop-shadow(0 2px 6px rgba(255,125,0,.45));
+  animation: flameFlicker 1.2s ease-in-out infinite;
+}
+
+/* hover/focus */
+.btn--ebook:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 10px 28px rgba(255,61,0,.45),
+    inset 0 0 0 1px rgba(255,255,255,.15);
+}
+.btn--ebook:focus-visible {
+  outline: 2px solid transparent;
+  box-shadow:
+    0 0 0 4px rgba(255,125,0,.35),
+    0 10px 28px rgba(255,61,0,.45);
+}
+
+/* animações */
+@keyframes ebookPulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.035); }
+}
+@keyframes flameFlicker {
+  0%, 100% { transform: translateY(0) rotate(0deg);   opacity: 1;   }
+  30%      { transform: translateY(-1px) rotate(-4deg); opacity: .95; }
+  60%      { transform: translateY(1px)  rotate(3deg);  opacity: .9;  }
+}
+
+/* acessibilidade: reduzir movimento */
+@media (prefers-reduced-motion: reduce) {
+  .btn--ebook, .ebook__flame { animation: none !important; }
+}
+
+/* mobile: garante destaque e toque confortável */
+@media (max-width: 767px) {
+  .nav__item--ebook {
+    width: 100%;
+  }
+  .btn--ebook {
+    justify-content: center;
+    width: 100%;
+    padding: .9rem 1.1rem;
+    font-size: 1rem;
+  }
+}
