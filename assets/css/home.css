@@ -745,3 +745,51 @@
     height: 24px;
   }
 }
+/* ===== Footer Credit ===== */
+.footer__credit {
+  margin-top: 2.5rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.footer__credit-text {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.3px;
+}
+
+.footer__credit-logos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.footer__credit-logo {
+  height: 26px;
+  width: auto;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.footer__credit-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.footer__credit .divider {
+  font-weight: 500;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+/* responsivo */
+@media (max-width: 767px) {
+  .footer__credit-logo {
+    height: 22px;
+  }
+  .footer__credit-text {
+    font-size: 0.8rem;
+  }
+}
