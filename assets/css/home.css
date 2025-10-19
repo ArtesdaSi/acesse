@@ -684,3 +684,21 @@
     font-size: 1rem;
   }
 }
+
+/* ===== Ajuste de espaçamento hero vs header ===== */
+.hero {
+  position: relative;
+  padding-top: 8rem; /* afasta o texto do nav */
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding-top: 6rem; /* reduz um pouco no tablet */
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 4.5rem; /* reduz no mobile */
+  }
+}
