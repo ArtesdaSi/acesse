@@ -702,3 +702,46 @@
     padding-top: 4.5rem; /* reduz no mobile */
   }
 }
+/* ====== Ajuste de ícones de redes sociais no footer ====== */
+.footer__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* espaçamento entre os ícones */
+  margin-top: 1rem;
+}
+
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.footer__social-link:hover {
+  transform: scale(1.1);
+  filter: brightness(1.15);
+}
+
+/* controla o tamanho real das imagens dos ícones */
+.footer__social-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* responsivo */
+@media (max-width: 767px) {
+  .footer__social-link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__social-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
